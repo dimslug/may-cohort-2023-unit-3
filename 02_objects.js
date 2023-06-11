@@ -80,5 +80,41 @@ console.log("BEFORE : ", Object.keys(futurama));
 delete futurama.currently_running;
 console.log("AFTER: ", Object.keys(futurama));
 
+//! Destructuring
 const { character, seasons } = theSimpsons;
+console.log(character);
+console.log(seasons);
 
+character.push('Meo'); // TYPO
+// console.log(characters);
+character[6] = "Moe"; //changed the original object value
+console.log(character);
+console.log('OBJ: ', theSimpsons.character);
+
+// changing the key
+const { est: established, currently_running: on_air } = theSimpsons;
+
+console.log("Established: ", established);
+console.log("On Air: ", on_air);
+console.log('OBJ : ', theSimpsons); // doesn't change the orignal object.
+
+//! Spread with Objects
+
+const simpsonsCharacters = {
+    simpsonHouse: ['Homer', 'Marge', "Bart", 'Lisa', "Maggie"],
+    moesTavern: ['Moe', 'Barney']
+}
+
+const generalLocations = {
+    park: "statue",
+    beach: "dock",
+    lake: "3-eyes fish"
+}
+
+const locations = {
+    ...simpsonsCharacters,
+    dmv: ['Patty', 'Selma'],
+    ...generalLocations
+}
+
+console.log(locations);
