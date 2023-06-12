@@ -5,7 +5,7 @@
 
 */
 
-let list = ['milk', 'bread', 'chicken', 'coffee' ];
+let list = ['milk', 'bread', 'chicken', 'coffee'];
 //              1       2       3           4
 
 console.log(list[2]);
@@ -34,7 +34,7 @@ let food = [
 ];
 
 
-for(item of food) {
+for (item of food) {
     console.log(item);
 }
 
@@ -64,7 +64,7 @@ console.log(`Unshift: ${food}`);
 
 //* .length - returns a numeric value of how many items are IN the array
 
-let count = [0,1,2,3,4,5,6,7,8,9];
+let count = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(count.length);
 console.log(count[9])
 console.log(count[count.length - 1]);
@@ -91,7 +91,7 @@ const filteredFruit = fruits.filter(fruit => {
 
 console.log(filteredFruit);
 
-let newArray = [1,2,3,4];
+let newArray = [1, 2, 3, 4];
 let even = newArray.filter(evenFunction);
 
 function evenFunction(num) {
@@ -126,10 +126,10 @@ console.log(checkNames);
         - The array object itself
 */
 
-let letters = ['a', 'b','c', 'd'];
-for(let i = 0; i < letters.length; i++) {
-    console.log(letters[i]);
-};
+let letters = ['a', 'b', 'c', 'd'];
+// for(let i = 0; i < letters.length; i++) {
+//     console.log(letters[i]);
+// };
 
 letters.forEach(x => console.log("For Each ", x));
 letters.forEach((x, i) => console.log("For Each: ", x, i));
@@ -148,10 +148,10 @@ character = "April";
 console.log("Find: ", tmnt.find(c => c == character));
 
 character = "Splinter";
-tmnt.find((c,i) => console.log(c == character, "index; ", i));
+tmnt.find((c, i) => console.log(c == character, "index; ", i));
 
-let leader = tmnt.find((c,i) => {
-    if(c == character) {
+let leader = tmnt.find((c, i) => {
+    if (c == character) {
         return tmnt[i]
     }
 });
@@ -163,11 +163,11 @@ console.log('leader: ', leader);
 let numArray = [];
 let fizzBuzzArray = [];
 
-for(let i = 0; i < 101 ; i++) numArray.push(i);
+for (let i = 0; i < 101; i++) numArray.push(i);
 console.log(numArray);
 
 numArray.map(x => {
-    if(x % 15 === 0) fizzBuzzArray.push(x);
+    if (x % 15 === 0) fizzBuzzArray.push(x);
 });
 
 //! Destructuring, Spread, and Rest
@@ -211,14 +211,14 @@ console.log(Math.min(...prices));
 // anytime that you are working with a function / method that requires standalone values, spread operator helps get these values out of an array.
 
 //? Rest Operator
-const newFullName = ['Jane', 'Done', 'Mrs.', { month: 3, date: 22, year: 1973}];
+const newFullName = ['Jane', 'Done', 'Mrs.', { month: 3, date: 22, year: 1973 }];
 
 const [fName, lName, ...otherInfo] = newFullName;
 console.log(fName);
 console.log(lName);
 console.log(otherInfo);
 newFullName.push('testOne', 2, false, true);
-const [first, last, , ,, ...testData ] = newFullName;
+const [first, last, , , , ...testData] = newFullName;
 console.log(first, last, testData);
 // MUST be the last element
 

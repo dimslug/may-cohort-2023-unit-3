@@ -35,8 +35,8 @@ let theSimpsons = {
                 aired: '1990-01-01',
             },
         ],
-        "season two":[/* mock info */],
-        "season three":[/* mock info */],
+        "season two": [/* mock info */],
+        "season three": [/* mock info */],
     },
     currently_running: true,
 }
@@ -49,7 +49,7 @@ console.log(theSimpsons["genre"]); //object["key"]
 
 console.log(theSimpsons.seasons["season one"]);
 
-theSimpsons.character = [ 'Home', 'Marge', 'Bart', 'Lisa', 'Maggie'];
+theSimpsons.character = ['Home', 'Marge', 'Bart', 'Lisa', 'Maggie'];
 console.log(theSimpsons);
 
 theSimpsons.character.push('Ned Flanders');
