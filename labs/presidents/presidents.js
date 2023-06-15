@@ -40,4 +40,4 @@ const presidents = [
     { first: 'John', last: 'Kennedy', year: 1917, passed: 1963 },
     { first: 'Lyndon', last: 'Johnson', year: 1908, passed: 1973 },
     { first: 'Richard', last: 'Nixon', year: 1913, passed: 1994 },
-    { first: 'Gerald', last: 'Ford', year: 1913, passed: 2006 },
+    { first: 'Gerald', last: 'Ford', year: 1913, passed: 2006 } ]
